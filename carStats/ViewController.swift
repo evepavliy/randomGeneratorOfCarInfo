@@ -47,11 +47,11 @@ class ViewController: UIViewController {
         
         imageView.image = UIImage(named: dataSelect["Image"]!)
         label1.text = dataSelect["Name"]
-        label2.text = dataSelect["BHP"]
-        label3.text = dataSelect["0-60"]
-        label4.text = dataSelect["Top Speed"]
-        label5.text = dataSelect["MPG"]
-        label6.text = dataSelect["Price"]
+        label2.text = "BHP : \(dataSelect["BHP"]!)"
+        label3.text = "0-60 : \(dataSelect["0-60"]!)"
+        label4.text = "Top Speed : \(dataSelect["Top Speed"]!)"
+        label5.text = "MPG : \(dataSelect["MPG"]!)"
+        label6.text = "Price : \(dataSelect["Price"]!)"
     }
     
     
