@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.items = loadPlist()
+        randomCar(self)
     }
 
     func loadPlist() -> [[String:String]] {
@@ -45,7 +46,12 @@ class ViewController: UIViewController {
         let dataSelect = items.randomElement()!
         
         imageView.image = UIImage(named: dataSelect["Image"]!)
-        
+        label1.text = dataSelect["Name"]
+        label2.text = dataSelect["BHP"]
+        label3.text = dataSelect["0-60"]
+        label4.text = dataSelect["Top Speed"]
+        label5.text = dataSelect["MPG"]
+        label6.text = dataSelect["Price"]
     }
     
     
